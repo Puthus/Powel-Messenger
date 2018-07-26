@@ -1,0 +1,196 @@
+html,body {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background : url("../assets/Background.png") no-repeat fixed center;
+	background-size: cover;
+	display: grid;
+	grid-template-rows: 100px auto 100px;
+	grid-template-areas: "head""main""foot";
+	height: 100vh;
+}
+
+header {
+	display: grid;
+	grid-area: head;
+	grid-template-columns: 200px auto;
+	grid-template-areas: "logo info";
+}
+
+main {
+	display: grid;
+	grid-area: main;
+	grid-template-columns: 30% auto ;
+	grid-template-areas: "talk register"
+}
+
+footer {
+	display: grid;
+	grid-area: foot;
+}
+
+#logo{
+	grid-area: logo;
+	text-align : center;
+	align-self: center;
+}
+
+#logo > h4 {
+	font-size: 23px;
+ 	font-family: "Nunito";
+ 	color: rgb(255, 255, 255);
+ 	font-weight: bold;
+  	text-shadow: 0px 2px 6px rgba(20, 39, 55, 0.004);
+}
+
+
+.login {
+	border-width: 2px;
+	border-color: rgb(38, 46, 72);
+	border-style: solid;
+	border-radius: 3px;
+	width: 272px;
+	height: 35px;
+	padding-left:10px;
+	background: transparent;
+	font-size: 15px;
+	font-family: "Nunito";
+	color: rgb(106, 115, 141);
+	line-height: 1.2;
+	text-align: justifyRight;
+}
+
+.login::placeholder{
+  font-size: 15px;
+  font-family: "Nunito";
+  color: rgb(86, 95, 121);
+  line-height: 1.2;
+  text-align: justifyRight;
+}
+
+
+#info > form > input[type=submit]	 {
+	border-radius: 17px;
+	background-image: -moz-linear-gradient( 45deg, rgb(38,46,72) 0%, rgb(58,69,104) 100%);
+	background-image: -webkit-linear-gradient( 45deg, rgb(38,46,72) 0%, rgb(58,69,104) 100%);
+	background-image: -ms-linear-gradient( 45deg, rgb(38,46,72) 0%, rgb(58,69,104) 100%);
+	width: 128px;
+	height: 37px;
+	font-size: 15px;
+	font-family: "Nunito";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-shadow: 0px 1px 1.8px rgba(0, 0, 0, 0.4);
+	border: none;
+}
+
+#info > form > input {
+	margin-left: 10px;
+}
+
+#info{
+	grid-area: info;x
+	margin-left: 10%; 
+	justify-self: right;
+    align-self: center;
+    margin-right: 20px;   
+}
+
+main > pre {
+	font-size: 50px;
+  	font-family: "Nunito";
+  	color: rgb(255, 255, 255);
+  	line-height: 1.2;
+  	align-self: center;
+  	margin-left: 10%; 
+}
+
+#signup {
+	background : url("../assets/Rectangle 3.png") no-repeat;
+	width: 446px;
+	height: 560px;
+	background-size: cover;
+	grid-row-gap: 10px;
+	padding:0px;
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 43px auto 43px;
+	grid-template-rows: 95px repeat(6,50px) 95px;
+	grid-template-areas: 
+	". title ."
+	". username ."
+	". name ."
+	". bd ."
+	". mail ."
+	". password ."
+	". passwordco ."
+	". butt .";
+	align-items: center;
+	justify-content: center;
+}
+
+.x {
+	grid-area: name;
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-template-areas: "namex lnamex";
+	column-gap: 2%;
+}
+.i1{grid-area:username ;}
+.i2{grid-area: namex;}
+.i3{grid-area: lnamex;}
+.i4{grid-area: bd;}
+.i5{grid-area: mail;}
+.i6{grid-area: password;}
+.i7{grid-area: passwordco;}
+.i8{grid-area: butt;
+  border-radius: 17px;
+  background-image: -moz-linear-gradient( 45deg, rgb(50,21,117) 0%, rgb(141,11,147) 51%, rgb(255,0,102) 100%, rgb(255,5,124) 100%);
+  background-image: -webkit-linear-gradient( 45deg, rgb(50,21,117) 0%, rgb(141,11,147) 51%, rgb(255,0,102) 100%, rgb(255,5,124) 100%);
+  background-image: -ms-linear-gradient( 45deg, rgb(50,21,117) 0%, rgb(141,11,147) 51%, rgb(255,0,102) 100%, rgb(255,5,124) 100%);  
+  width: 128px;
+  height: 37px;
+  border: none;  
+  font-size: 15px;
+  font-family: "Nunito";
+  font-weight: medium;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-shadow: 0px 1px 1.8px rgba(0, 0, 0, 0.4);
+  align-self: center;
+  justify-self: center;
+}
+
+.style1 {
+	border-radius: 3px;
+  	background-color: rgb(38, 46, 72);
+  	width: 360px;
+  	height: 39px;
+  	border:none;
+	color: rgb(106, 115, 141);
+}
+
+.style1::placeholder {
+	font-size: 15px;
+	font-family: "Nunito";
+	color: rgb(86, 95, 121);
+	line-height: 1.2;
+	text-align: justifyRight;
+	padding-left: 10px;
+}
+
+.style2 {
+	width: 100%;
+}
+.title {
+	font-size: 20px;
+  	font-family: "Nunito";
+  	color: rgb(255, 255, 255);
+  	line-height: 1.2;
+  	text-align: center;
+  	margin-bottom: 0px;
+  	grid-area: title;
+}
+
